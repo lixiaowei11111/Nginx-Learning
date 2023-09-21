@@ -127,7 +127,7 @@ http {
 
 - `http { ... }` 定义 http 服务的配置，包括mime类型、日志格式、访问日志存放位置、upstream 节点、路径转发、错误页面等。
 
-- `include /etc/nginx/mime.types;` 包含 nginx 预定义的 mime 类型。
+- `include /etc/nginx/mime.types;` 包含 nginx 预定义的 mime 类型。['include'表示'纳入mime.types文件'的配置路径](https://blog.csdn.net/wzj_110/article/details/112850811)
 
 - `log_format main '...'` 定义日志格式，包括远程地址、用户、访问时间、请求信息、响应状态、发送字节数、来源信息、User-Agent 信息和转发信息。
 
