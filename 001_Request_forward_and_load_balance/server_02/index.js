@@ -28,6 +28,7 @@ app.get("/admin", (req, res) => {
 });
 
 app.post("/admin/login", (req, res) => {
+  console.log(req.hostname,'req.hostname');// 测试nginx 转发后的host是否生效
   const userName = req.body;
   console.log(userName, "userName");
   res.send("port=6666 admin/login");
